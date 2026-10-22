@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediTrack - Medicine Reminder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>💊 MediTrack</h1>
+    <p>Your health, your reminder, your care.</p>
+  </header>
+
+  <main class="container">
+
+    <section class="welcome">
+      <h2>Hello! Take care of yourself 🌿</h2>
+      <p>Manage your medicines and never miss your schedule.</p>
+      <p id="todayDate"></p>
+    </section>
+
+    <section class="dashboard">
+      <div class="stat-card">
+        <span>💊</span>
+        <h3 id="totalMedicines">0</h3>
+        <p>Total Medicines</p>
+      </div>
+
+      <div class="stat-card">
+        <span>✅</span>
+        <h3 id="takenMedicines">0</h3>
+        <p>Taken</p>
+      </div>
+
+      <div class="stat-card">
+        <span>⏰</span>
+        <h3 id="pendingMedicines">0</h3>
+        <p>Pending</p>
+      </div>
+    </section>
+
+    <section class="alarm-section">
+      <h2>🔔 Reminder Settings</h2>
+      <p>Enable sound and browser notifications for your reminders.</p>
+      <button type="button" id="enableAlarmButton">
+        Enable Alarm & Notifications
+      </button>
+      <p id="alarmStatus">Alarm is not enabled yet.</p>
+    </section>
+
+    <section class="panel">
+      <h2>➕ Add a Medicine</h2>
+
+      <form id="medicineForm">
+        <label for="medicineName">Medicine Name</label>
+        <input type="text" id="medicineName"
+          placeholder="e.g. Vitamin tablet" required>
+
+        <label for="medicineDosage">Dosage</label>
+        <input type="text" id="medicineDosage"
+          placeholder="e.g. One tablet" required>
+
+        <label for="medicineTime">Reminder Time</label>
+        <input type="time" id="medicineTime" required>
+
+        <button type="submit">Add Medicine</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>📋 My Medicines</h2>
+
+      <input type="search" id="searchMedicine"
+        placeholder="Search medicines...">
+
+      <div id="medicineList"></div>
+    </section>
+
+    <p class="disclaimer">
+      Reminder only: always follow your doctor's instructions
+      for medicine and dosage.
+    </p>
+
+  </main>
+
+  <footer>
+    <p>Made with 💚 MediTrack © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

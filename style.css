@@ -1,0 +1,216 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f8f5;
+  color: #263b35;
+  line-height: 1.6;
+}
+
+.header {
+  background: linear-gradient(135deg, #087f70, #35b58b);
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.container {
+  max-width: 950px;
+  margin: 25px auto;
+  padding: 0 18px;
+}
+
+.welcome,
+.panel,
+.alarm-section {
+  background: white;
+  padding: 24px;
+  margin-bottom: 22px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px #0000000d;
+}
+
+.welcome {
+  border-left: 5px solid #20a47b;
+}
+
+.welcome h2,
+.panel h2,
+.alarm-section h2 {
+  margin-bottom: 12px;
+}
+
+#todayDate {
+  color: #07856d;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.stat-card {
+  background: white;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px #0000000d;
+}
+
+.stat-card span {
+  font-size: 28px;
+}
+
+.stat-card h3 {
+  font-size: 28px;
+  color: #07856d;
+}
+
+.alarm-section {
+  border: 1px solid #b5e7d6;
+  text-align: center;
+}
+
+#alarmStatus {
+  margin-top: 12px;
+  color: #087f70;
+  font-size: 14px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd8d2;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  background: white;
+}
+
+input:focus {
+  outline: 2px solid #35b58b;
+  border-color: transparent;
+}
+
+button {
+  background: #07856d;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+button:hover {
+  background: #056b58;
+}
+
+#searchMedicine {
+  margin-top: 8px;
+}
+
+.medicine-card {
+  background: #f6fbf8;
+  border: 1px solid #dcece4;
+  border-left: 5px solid #20a47b;
+  padding: 18px;
+  margin-top: 15px;
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+
+.medicine-card h3 {
+  color: #087f70;
+  margin-bottom: 8px;
+}
+
+.medicine-card p {
+  margin: 5px 0;
+}
+
+.due-reminder {
+  color: #b45309;
+  font-weight: bold;
+  margin-top: 12px !important;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.card-actions button {
+  margin-top: 0;
+}
+
+.taken-button {
+  background: #168653;
+}
+
+.delete-button {
+  background: #d94848;
+}
+
+.delete-button:hover {
+  background: #ad2929;
+}
+
+.disclaimer {
+  text-align: center;
+  font-size: 13px;
+  color: #66766e;
+  margin: 20px 0;
+}
+
+footer {
+  background: #087f70;
+  color: white;
+  text-align: center;
+  padding: 18px;
+}
+
+@media (max-width: 600px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 29px;
+  }
+
+  .welcome,
+  .panel,
+  .alarm-section {
+    padding: 17px;
+  }
+}
